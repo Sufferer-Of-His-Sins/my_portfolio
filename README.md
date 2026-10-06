@@ -1,5 +1,2 @@
 # Мое портфолио
-
-    npm install
-    npm run dev
-    npm run build
+    Этот репозиторий предназначен для github страницы 
