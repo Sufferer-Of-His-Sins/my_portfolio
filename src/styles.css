@@ -44,7 +44,7 @@ nav a { text-decoration: none; color: var(--muted); }
 nav a:hover { color: var(--ink); }
 .theme { background: none; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); cursor: pointer; padding: 4px 10px; font: 14px var(--body); }
 
-.hero { padding: 64px 0 48px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 32px; align-items: center; }
+.hero { padding: 64px 0 48px; }
 h1 { font: 800 clamp(32px, 4.2vw, 56px) / 1.05 var(--head); letter-spacing: -0.03em; margin: 0 0 20px; }
 .lead { max-width: 36em; color: var(--muted); margin: 0 0 24px; }
 .btn { display: inline-block; padding: 12px 22px; background: var(--accent); color: var(--on-accent); border: 0; border-radius: 6px; text-decoration: none; cursor: pointer; font: 500 16px var(--body); }
@@ -59,6 +59,24 @@ h1 { font: 800 clamp(32px, 4.2vw, 56px) / 1.05 var(--head); letter-spacing: -0.0
 
 .main section { padding: 48px 0; border-top: 1px solid var(--line); }
 h2 { font: 700 30px / 1.1 var(--head); letter-spacing: -0.02em; margin: 0 0 20px; }
+
+.story { padding: 24px 0; border-top: 1px solid var(--line); }
+.filters + .story { margin-top: 20px; }
+.story h3 { font: 700 22px var(--head); margin: 2px 0 8px; }
+.story h4 { font: 700 16px var(--head); margin: 20px 0 6px; }
+.story p { margin: 0 0 8px; color: var(--muted); }
+.story ul { margin: 0 0 12px; padding-left: 20px; color: var(--muted); }
+.story li { margin-bottom: 4px; }
+.story .links { margin-top: 12px; }
+
+.shot { margin: 20px 0 16px; }
+.shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+.shot-placeholder { border: 1px dashed var(--line); border-radius: 6px; padding: 56px 16px; text-align: center; color: var(--muted); font: 13px var(--mono); }
+.shot figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
+
+.demo-block { margin-top: 24px; padding-top: 20px; border-top: 1px dashed var(--line); }
+.main .demo-block section { padding: 0; border-top: 0; animation: none; }
+.demo-block h2 { font: 700 18px var(--head); letter-spacing: 0; margin: 0 0 12px; }
 
 .diagram { width: 100%; height: auto; margin: 8px 0 16px; }
 .diagram text { fill: var(--ink); font: 13px var(--mono); }
@@ -87,7 +105,7 @@ footer { padding: 40px 0 56px; border-top: 1px solid var(--line); color: var(--m
   .side { position: static; max-height: none; margin-top: 0; }
 }
 @media (max-width: 720px) {
-  .hero { grid-template-columns: 1fr; padding-top: 40px; }
+  .hero { padding-top: 40px; }
   nav { flex-wrap: wrap; gap: 12px; }
 }
 
@@ -101,7 +119,7 @@ nav, .hero, .main section, footer, .side {
 nav { animation-delay: 0.05s; }
 .hero { animation-delay: 0.15s; }
 .side { animation-delay: 0.25s; }
-#demo { animation-delay: 0.3s; }
+#projects { animation-delay: 0.25s; }
 #skills { animation-delay: 0.4s; }
 footer { animation-delay: 0.5s; }
 body { transition: background-color 0.3s, color 0.3s; }

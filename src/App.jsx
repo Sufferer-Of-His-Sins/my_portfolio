@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { profile, projects, skills } from './data.js';
-import Trace from './components/Trace.jsx';
 import Sidebar from './components/Sidebar.jsx';
-import TerminalDemo from './components/TerminalDemo.jsx';
+import Projects from './components/Projects.jsx';
 
 export default function App() {
   const [theme, setTheme] = useState(null);
@@ -23,7 +22,7 @@ export default function App() {
 
   return (
     <div className="layout">
-      <Sidebar id="projects" title="Готовые проекты" items={done} />
+      <Sidebar title="Готовые проекты" items={done} />
 
       <div className="main">
         <nav>
@@ -36,16 +35,15 @@ export default function App() {
         </nav>
 
         <header className="hero" id="top">
+          <h1>{profile.title}</h1>
+          <p className="lead">{profile.role}. {profile.about}</p>
           <div>
-            <h1>{profile.title}</h1>
-            <p className="lead">{profile.role}. {profile.about}</p>
-            <a className="btn" href="#demo">Смотреть демо</a>
+            <a className="btn" href="#projects">Смотреть проекты</a>
             <a className="btn ghost" href={`mailto:${profile.email}`}>Написать</a>
           </div>
-          <Trace />
         </header>
 
-        <TerminalDemo />
+        <Projects />
 
         <section id="skills">
           <h2>Навыки</h2>
