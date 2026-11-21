@@ -52,6 +52,17 @@ export const projects = [
       caption: 'Так выглядит мой рабочий стол',
     },
   },
+  {
+    title: 'Albion Online Viewer',
+    year: '2026',
+    status: 'done',
+    tags: ['Python', 'Batchfile', 'Inno Setup'],
+    text: 'Утилита для просмотра локаций.',
+    why: 'Данное приложение разрабатывалось для просмотра локаций в игре Albion Online. Я хотел сделать удобный инструмент для просмотра локаций, чтобы не тратить время на поиск нужной локации в интернете.',
+    how: [
+      ' - ',
+    ],
+  },
 ];
 
 export const skills = [
